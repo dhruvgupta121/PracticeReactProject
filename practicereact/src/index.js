@@ -1,21 +1,45 @@
 //var React = require('react');
 //var ReactDOM = require('react-dom');
 
-import React from "react"
+
+import React from "react";
 import ReactDOM from "react-dom"
+
+const firstName = "Dhruv";
+const lastName = "Gupta";
+
+// const todayDate = Date.prototype.getDate();
+// const todayTime = Date.prototype.getTime();
+
+const currentDate = new Date().toLocaleDateString();
+const currentTime = new Date().toLocaleTimeString();
 
 ReactDOM.render(
     <>
-        <h1> Netflix Series </h1>
-        <p> List of 5 series... </p>
-        <ol>
-            <li>Dark</li>
-            <li>DDLJ</li>
-            <li>Dahan</li>
-            <li>Masti</li>
-            <li>Hey Shona</li>
-        </ol>
-    </> , document.getElementById("root"))
+        <h1>Hello, My name is {firstName} {lastName}</h1>
+        <p>current date is {currentDate}</p>
+        <p>current time is {currentTime}</p>
+        {/*<h1>My name is {firstName} {lastName}...</h1>*/}
+        {/*<p>My lucky number is { 2 + 3 }...</p>*/}
+    </>
+    , document.getElementById("root"));
+
+
+// import React from "react"
+// import ReactDOM from "react-dom"
+//
+// ReactDOM.render(
+//     <>
+//         <h1> Netflix Series </h1>
+//         <p> List of 5 series... </p>
+//         <ol>
+//             <li>Dark</li>
+//             <li>DDLJ</li>
+//             <li>Dahan</li>
+//             <li>Masti</li>
+//             <li>Hey Shona</li>
+//         </ol>
+//     </> , document.getElementById("root"))
 
 //import React from "react";
 // import ReactDOM from "react-dom"
