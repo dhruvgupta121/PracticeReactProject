@@ -5,24 +5,41 @@
 import React from "react";
 import ReactDOM from "react-dom"
 
-const firstName = "Dhruv";
-const lastName = "Gupta";
+const name = "Dhruv Gupta";
+
+const image1 = "https://picsum.photos/200/300";
+const image2 = "https://picsum.photos/250/300";
+const image3 = "https://picsum.photos/300/300";
+
+ReactDOM.render(
+    <>
+        <h1 contentEditable="true">My name is {name}</h1>
+        <img src={image1} alt="Random Images"/>
+        <img src={image2} alt="Random Images"/>
+        <img src={image3} alt="Random Images"/>
+    </>,
+    document.getElementById("root"));
+
+
+
+// const firstName = "Dhruv";
+// const lastName = "Gupta";
 
 // const todayDate = Date.prototype.getDate();
 // const todayTime = Date.prototype.getTime();
 
-const currentDate = new Date().toLocaleDateString();
-const currentTime = new Date().toLocaleTimeString();
-
-ReactDOM.render(
-    <>
-        <h1>Hello, My name is {firstName} {lastName}</h1>
-        <p>current date is {currentDate}</p>
-        <p>current time is {currentTime}</p>
-        {/*<h1>My name is {firstName} {lastName}...</h1>*/}
-        {/*<p>My lucky number is { 2 + 3 }...</p>*/}
-    </>
-    , document.getElementById("root"));
+// const currentDate = new Date().toLocaleDateString();
+// const currentTime = new Date().toLocaleTimeString();
+//
+// ReactDOM.render(
+//     <>
+//         <h1>Hello, My name is {firstName} {lastName}</h1>
+//         <p>current date is {currentDate}</p>
+//         <p>current time is {currentTime}</p>
+//         {/*<h1>My name is {firstName} {lastName}...</h1>*/}
+//         {/*<p>My lucky number is { 2 + 3 }...</p>*/}
+//     </>
+//     , document.getElementById("root"));
 
 
 // import React from "react"
