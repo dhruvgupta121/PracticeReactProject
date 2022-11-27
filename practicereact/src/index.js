@@ -3,7 +3,8 @@
 
 
 import React from "react";
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom";
+import './index.css';
 
 const name = "Dhruv Gupta";
 
@@ -13,10 +14,13 @@ const image3 = "https://picsum.photos/300/300";
 
 ReactDOM.render(
     <>
-        <h1 contentEditable="true">My name is {name}</h1>
-        <img src={image1} alt="Random Images"/>
-        <img src={image2} alt="Random Images"/>
-        <img src={image3} alt="Random Images"/>
+        <h1 className={"heading"}>My name is {name}</h1>
+
+        <div className={"img_div"}>
+                <img src={image1} alt="Random Images"/>
+                <img src={image2} alt="Random Images"/>
+                <img src={image3} alt="Random Images"/>
+        </div>
     </>,
     document.getElementById("root"));
 
